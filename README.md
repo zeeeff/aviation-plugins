@@ -13,7 +13,8 @@ use), navaids, waypoints, airways and military training routes.
   in the plugin or loaded from a file.
 - Tap an item for its info: key frequencies, runways, services, fuel,
   tower and ATIS, remarks. Search by identifier or name and drop a point.
-- Other ATAK plugins can query the data (identifier, nearest, search, area).
+- Other ATAK plugins can query the data (identifier, nearest, search, area):
+  see [aero-data/API.md](aero-data/API.md).
 
 ### Install
 1. Requires **ATAK-CIV 5.5.1, developer build** (from the ATAK 5.5.1 SDK).
