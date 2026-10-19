@@ -67,3 +67,40 @@ radius drawn as shaded circles around a point.
 - **Not for flight planning or navigation.** Figures are estimates from the
   numbers you enter; no wind is applied (speeds are ground speed). Always
   use approved performance data.
+
+## Collective Routes
+
+Route planning and navigation for helicopter crews on the ATAK map. Built
+for night flying in an unstable aircraft: dark theme, big buttons, works
+with gloves.
+
+- Routes in folders. Add waypoints by map tap, coordinates (MGRS), an
+  existing marker, own position, or airport/navaid/fix search (needs
+  **Aero Data**). Auto-name mission points (STTO, SP, ACP, RP, TGT) with
+  matching map symbols.
+- Edit page: course, distance, ETE and ETA for each leg. Drag the route on
+  the map, cross a waypoint on a heading, reverse or duplicate a route.
+- Navigate: active leg in magenta, auto-sequencing, Direct-To, a Nav tab
+  and a draggable map overlay.
+- Time on target: one or more TOTs per route, with required ground speed,
+  early/late, depart-at time, a TOT box on the map, passed times and
+  touchdown time.
+- Distance and time marks along the route, range rings around own
+  position, and a track vector ahead of own position.
+- Share routes with other ATAK users as `.croute` files.
+
+### Install
+1. Requires **ATAK-CIV 5.5.1, developer build** (from the ATAK 5.5.1 SDK).
+   The APK is signed with the SDK development key, so release builds of
+   ATAK will not load it.
+2. Download the APK from
+   [Releases](https://github.com/zeeeff/aviation-plugins/releases) and
+   install it on the phone (or `adb install`).
+3. In ATAK, open Plugins and load Collective Routes, then open it from the
+   Tools menu. Optional: install Aero Data for waypoint search.
+
+### Use
+- **Not for navigation.** This is an early build and has not been flight
+  tested: auto-sequencing, ETE/ETA and TOT numbers depend on GPS ground
+  speed and have only been checked with simulated GPS. Use it as an aid
+  alongside approved navigation sources.
