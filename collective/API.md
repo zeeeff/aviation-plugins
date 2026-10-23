@@ -1,6 +1,6 @@
-# Aero Data: API for other plugins
+# Collective (Aero Data): API for other plugins
 
-Aero Data answers location lookups for other ATAK plugins running in the
+Collective (formerly the Aero Data plugin) answers location lookups for other ATAK plugins running in the
 same ATAK process. There are two ways in:
 
 1. **Broadcast query** (recommended): send an intent, get a reply intent.
@@ -30,7 +30,7 @@ Per operation:
 |---|---|---|
 | `ident` | `ident` (String) | Exact match on identifier. Airports also match ICAO and local id (e.g. `ATL` finds KATL). |
 | `nearest` | `lat`, `lon` (double), `count` (int, default 10), `maxNm` (double, default 100) | Closest first, with `distanceNm` and `bearingTrue` added. |
-| `search` | `text` (String), `limit` (int, default 50) | Identifier match, or name contains the text. Waypoints match by identifier prefix. |
+| `search` | `text` (String), `limit` (int, default 50) | Identifier starts with the text (airports also by ICAO and local id), or name contains it. Exact identifier matches come first. |
 | `area` | `north`, `south`, `east`, `west` (double), `limit` (int, default 500) | Everything inside the box. Airspace: boxes that overlap it. |
 
 Reply: action = your `replyAction`
@@ -97,19 +97,19 @@ q.putExtra("replyAction", REPLY);
 AtakBroadcast.getInstance().sendBroadcast(q);
 ```
 
-If Aero Data isn't installed or loaded, no reply arrives. Use a timeout.
+If Collective isn't installed or loaded, no reply arrives. Use a timeout.
 
 ## 2. Read the database directly
 
 File: `FileSystemUtils.getItem("tools/aerodata/aerodata.sqlite")`, which is
 usually `/sdcard/atak/tools/aerodata/aerodata.sqlite`. Open it with
 `SQLiteDatabase.OPEN_READONLY`. It uses WAL mode, so reading works while
-Aero Data is writing.
+Collective is writing.
 
 Tables: `airport`, `navaid`, `waypoint`, `airspace`, `route`. Always add
 `WHERE hidden=0` to get one copy per item. Enum columns (`type`, `kind`)
 store the ordinal of the matching enum in
-`com.atakmap.android.aerodata.model`, and `source` stores the ordinal of
+`com.atakmap.android.collectiveroutes.aero.model`, and `source` stores the ordinal of
 `data.Source` (0 FAA_NASR, 1 OURAIRPORTS, 2 OPENAIP, 3 DAFIF). The schema
 may change between versions (`PRAGMA user_version` gives it), so the
 broadcast query is the stable interface.
