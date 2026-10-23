@@ -3,7 +3,7 @@
 Plugin downloads (APKs) for ATAK-CIV. Releases are tagged
 `<plugin>-v<version>`. Source code is kept elsewhere.
 
-## Collective
+## Collective Aviation
 
 Route planning, fuel range rings and aeronautical data for helicopter crews,
 in one plugin. Built for night flying in an unstable aircraft: dark theme,
@@ -51,13 +51,14 @@ big buttons, works with gloves. Four tabs:
    The APK is signed with the SDK development key, so release builds of ATAK
    will not load it.
 2. If you had the separate Range Rings or Aero Data plugins, uninstall them
-   first. Collective replaces them and Collective Routes, and keeps their
-   saved routes, ring sets and downloaded data.
+   first. Collective Aviation replaces them and Collective Routes, and keeps
+   their saved routes, ring sets and downloaded data.
 3. Download the APK from
    [Releases](https://github.com/zeeeff/aviation-plugins/releases) and
    install it on the phone (or `adb install`).
-4. In ATAK, open Plugins and load Collective, then open it from the Tools
-   menu. Use the Aero tab to download or load aeronautical data.
+4. In ATAK, open Plugins and load Collective Aviation, then open it from the
+   Tools menu (rotor icon). Use the Aero tab to download or load
+   aeronautical data.
 
 Airspace outside the US needs your own free openAIP API key (openaip.net,
 profile, API Clients).
