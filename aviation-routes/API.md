@@ -1,6 +1,6 @@
-# Collective (Aero Data): API for other plugins
+# Aviation Routes (Aero Data): API for other plugins
 
-Collective (formerly the Aero Data plugin) answers location lookups for other ATAK plugins running in the
+Aviation Routes (formerly the Aero Data plugin) answers location lookups for other ATAK plugins running in the
 same ATAK process. There are two ways in:
 
 1. **Broadcast query** (recommended): send an intent, get a reply intent.
@@ -97,7 +97,7 @@ q.putExtra("replyAction", REPLY);
 AtakBroadcast.getInstance().sendBroadcast(q);
 ```
 
-If Collective isn't installed or loaded, no reply arrives. Use a timeout.
+If Aviation Routes isn't installed or loaded, no reply arrives. Use a timeout.
 
 ## 2. Read the database directly
 
