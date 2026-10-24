@@ -104,7 +104,7 @@ If Aviation Routes isn't installed or loaded, no reply arrives. Use a timeout.
 File: `FileSystemUtils.getItem("tools/aerodata/aerodata.sqlite")`, which is
 usually `/sdcard/atak/tools/aerodata/aerodata.sqlite`. Open it with
 `SQLiteDatabase.OPEN_READONLY`. It uses WAL mode, so reading works while
-Collective is writing.
+Aviation Routes is writing.
 
 Tables: `airport`, `navaid`, `waypoint`, `airspace`, `route`. Always add
 `WHERE hidden=0` to get one copy per item. Enum columns (`type`, `kind`)
