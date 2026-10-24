@@ -3,11 +3,11 @@
 Plugin downloads (APKs) for ATAK-CIV. Releases are tagged
 `<plugin>-v<version>`. Source code is kept elsewhere.
 
-## Collective Aviation
+## Aviation Routes
 
-Route planning, fuel range rings and aeronautical data for helicopter crews,
-in one plugin. Built for night flying in an unstable aircraft: dark theme,
-big buttons, works with gloves. Four tabs:
+Route planning, fuel range rings and aeronautical data in one plugin, built
+for helicopter crews but usable by anyone planning a route on the map. Dark
+theme, big buttons, works with gloves. Four tabs:
 
 **Routes**
 - Routes in folders. Tap a route's name to navigate it (magenta = active),
@@ -19,14 +19,14 @@ big buttons, works with gloves. Four tabs:
 - Edit page: course, distance, ETE and ETA for each leg. Hold and drag
   waypoints and legs on the map, cross a waypoint on a heading, reverse or
   duplicate a route.
-- Navigate: active leg in magenta, auto-sequencing, Direct-To, a Nav tab and
-  a draggable map overlay.
+- Navigate: active leg in magenta, auto-sequencing, Direct-To (from the map
+  or from the nav box: search a point or enter coordinates), a Nav tab and a
+  draggable map overlay.
 - Time on target: one or more TOTs per route, with required ground speed,
   early/late, depart-at time, a TOT box on the map, arrival and touchdown
   times.
 - Distance and time marks along the route, range rings around own position,
   and a track vector ahead of own position.
-- Share routes with other ATAK users as `.croute` files.
 
 **Rings**
 - Fuel-based ferry range and combat radius drawn around a point, from an
@@ -39,26 +39,36 @@ big buttons, works with gloves. Four tabs:
   and military training routes on the map. Tap an item for frequencies,
   runways, services and remarks; search by identifier or name.
 - Sources: FAA NASR (US, 28-day cycle), OurAirports and openAIP (outside the
-  US), and DAFIF from a file you provide. No data ships with the plugin;
-  each device downloads or loads its own.
+  US), and DAFIF from a file you provide. Each device downloads or loads its
+  own, or receives it from another user (below).
 - Other ATAK plugins can query the data: see
-  [collective/API.md](collective/API.md).
+  [aviation-routes/API.md](aviation-routes/API.md).
 
 **Settings**: time display, lat/long format, overlays, track vector, marks.
+
+**Sending to other users**
+- Long-press a route, ring set or folder (or use Send on a route's map
+  menu, or the Send button under an aero source) to open ATAK's contact
+  list: people, teams or a Data Sync mission.
+- Routes arrive complete (waypoints, TOTs, marks); ring sets arrive as map
+  circles everyone sees plus the editable set; folders keep their names;
+  aero sources are loaded and drawn by the receiver.
+- DAFIF is distribution-limited: send it only to recipients authorized to
+  receive it.
 
 ### Install
 1. Requires **ATAK-CIV 5.8, developer build** (from the ATAK-CIV 5.8 SDK).
    The APK is signed with the SDK development key, so release builds of ATAK
    will not load it.
 2. If you had the separate Range Rings or Aero Data plugins, uninstall them
-   first. Collective Aviation replaces them and Collective Routes, and keeps
+   first. Aviation Routes replaces them and Collective Routes, and keeps
    their saved routes, ring sets and downloaded data.
 3. Download the APK from
    [Releases](https://github.com/zeeeff/aviation-plugins/releases) and
    install it on the phone (or `adb install`).
-4. In ATAK, open Plugins and load Collective Aviation, then open it from the
+4. In ATAK, open Plugins and load Aviation Routes, then open it from the
    Tools menu (rotor icon). Use the Aero tab to download or load
-   aeronautical data.
+   aeronautical data. A short user manual is built in.
 
 Airspace outside the US needs your own free openAIP API key (openaip.net,
 profile, API Clients).
