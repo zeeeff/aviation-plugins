@@ -70,9 +70,12 @@ dropper offers.
   receive it.
 
 ### Install
-1. Requires **ATAK-CIV 5.8, developer build** (from the ATAK-CIV 5.8 SDK).
-   The APK is signed with the SDK development key, so release builds of ATAK
-   will not load it.
+1. Requires **ATAK-CIV 5.8**. Two builds:
+   - The APK on the Releases page is signed with the SDK development key and
+     loads only in the **developer build** of ATAK (from the ATAK-CIV 5.8 SDK).
+   - [aviation-routes/tpc-signed-0.4](aviation-routes/tpc-signed-0.4) has the
+     same version signed by the TAK Product Center, for **release ATAK**
+     (for example the Play Store build).
 2. If you had the separate Range Rings or Aero Data plugins, uninstall them
    first. Aviation Routes replaces them and Collective Routes, and keeps
    their saved routes, ring sets and downloaded data.
