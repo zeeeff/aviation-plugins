@@ -7,7 +7,7 @@ Plugin downloads (APKs) for ATAK-CIV. Releases are tagged
 
 Route planning, fuel range rings and aeronautical data in one plugin, built
 for helicopter crews but usable by anyone planning a route on the map. Dark
-theme, big buttons, works with gloves. Four tabs:
+theme, big buttons, works with gloves. Five tabs:
 
 **Routes**
 - Routes in folders. Tap a route's name to navigate it (magenta = active),
@@ -21,7 +21,8 @@ theme, big buttons, works with gloves. Four tabs:
   duplicate a route.
 - Navigate: active leg in magenta, auto-sequencing, Direct-To (from the map
   or from the nav box: search a point or enter coordinates), a Nav tab and a
-  draggable map overlay.
+  draggable map overlay. A MED Direct To spot (plugin-wide or per route) is
+  one tap away on the nav box menu.
 - Time on target: one or more TOTs per route, with required ground speed,
   early/late, depart-at time, a TOT box on the map, arrival and touchdown
   times.
@@ -34,6 +35,14 @@ theme, big buttons, works with gloves. Four tabs:
   weight and fuel on board. Combat by station time or by distance to target.
 - Saved ring sets in folders; show/hide, go to, edit and redraw.
 
+**LZ**
+- Landing zones in folders (a folder is a mission). Drop an LZ on the map
+  and pick where it sits in the mission area (N / E / S / W / C); it gets
+  the next unused name from that letter's list, or type your own.
+- Place ATAK's 3D aircraft models at the LZ (helicopters by default); rename
+  them and set their heading. Hide or show an LZ with its aircraft at once.
+- Direct To, zoom to, and send from the LZ page.
+
 **Aero**
 - Airports, airspace (class and special use), navaids, waypoints, airways
   and military training routes on the map. Tap an item for frequencies,
@@ -44,14 +53,18 @@ theme, big buttons, works with gloves. Four tabs:
 - Other ATAK plugins can query the data: see
   [aviation-routes/API.md](aviation-routes/API.md).
 
-**Settings**: time display, lat/long format, overlays, track vector, marks.
+**Settings**: time display, lat/long format, MED Direct To, overlays, track
+vector, default route markers, LZ name lists and which aircraft the LZ
+dropper offers.
 
 **Sending to other users**
-- Long-press a route, ring set or folder (or use Send on a route's map
-  menu, or the Send button under an aero source) to open ATAK's contact
+- Long-press a route, ring set, LZ or folder (or use Send on a map menu, on
+  a ring set or LZ page, or under an aero source) to open ATAK's contact
   list: people, teams or a Data Sync mission.
 - Routes arrive complete (waypoints, TOTs, marks); ring sets arrive as map
-  circles everyone sees plus the editable set; folders keep their names;
+  circles everyone sees plus the editable set; an LZ arrives as a point and
+  aircraft everyone sees, plus the full LZ for Aviation Routes users;
+  folders keep their names;
   aero sources are loaded and drawn by the receiver.
 - DAFIF is distribution-limited: send it only to recipients authorized to
   receive it.
