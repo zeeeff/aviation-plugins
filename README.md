@@ -88,8 +88,9 @@ aircraft the LZ dropper offers, VI box.
      loads only in the **developer build** of ATAK (from the ATAK-CIV 5.8 SDK).
    - [aviation-routes/tpc-signed-0.4](aviation-routes/tpc-signed-0.4) has
      version 0.4 signed by the TAK Product Center, for **release ATAK**
-     (for example the Play Store build). 0.4.1 has been submitted; its
-     signed build will be added here when it comes back.
+     (for example the Play Store build). 0.4.2 has been submitted; its
+     signed build will be added here when it comes back. (0.4.1 crashes on
+     opening when ring sets exist; use 0.4.2.)
 2. If you had the separate Range Rings or Aero Data plugins, uninstall them
    first. Aviation Routes replaces them and Collective Routes, and keeps
    their saved routes, ring sets and downloaded data.
