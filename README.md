@@ -81,7 +81,8 @@ which aircraft the LZ dropper offers, VI box, Experimental (VI).
   the ring set's inputs, the LZ) in their list. Folders keep their names.
 - Through a Data Sync mission they stay live: an edit on one device follows
   on the others, and removing an item from the mission removes it
-  everywhere. Your active leg, Direct To and passed times stay on your
+  everywhere. Items that are in a mission show Data Sync's icon under their
+  name in the lists. Your active leg, Direct To and passed times stay on your
   device.
 - Routes are read-only outside Aviation Routes: if someone moves, adds or
   deletes a route's points in plain ATAK, a device with the plugin puts the
@@ -97,7 +98,7 @@ which aircraft the LZ dropper offers, VI box, Experimental (VI).
      loads only in the **developer build** of ATAK (from the ATAK-CIV 5.8 SDK).
    - [aviation-routes/tpc-signed-0.4](aviation-routes/tpc-signed-0.4) has
      version 0.4 signed by the TAK Product Center, for **release ATAK**
-     (for example the Play Store build). 0.4.2 has been submitted; its
+     (for example the Play Store build). 0.4.3 has been submitted; its
      signed build will be added here when it comes back. (0.4.1 crashes on
      opening when ring sets exist; use 0.4.2 or later.)
 2. If you had the separate Range Rings or Aero Data plugins, uninstall them
