@@ -96,9 +96,10 @@ which aircraft the LZ dropper offers, VI box, Experimental (VI).
 1. Requires **ATAK-CIV 5.8**. Two builds:
    - The APK on the Releases page is signed with the SDK development key and
      loads only in the **developer build** of ATAK (from the ATAK-CIV 5.8 SDK).
-   - [aviation-routes/tpc-signed-0.5.4](aviation-routes/tpc-signed-0.5.4) has
-     version 0.5.4 signed by the TAK Product Center, for **release ATAK**
+   - [aviation-routes/tpc-signed-0.5.5](aviation-routes/tpc-signed-0.5.5) has
+     version 0.5.5 signed by the TAK Product Center, for **release ATAK**
      (for example the Play Store build). The older
+     [tpc-signed-0.5.4](aviation-routes/tpc-signed-0.5.4),
      [tpc-signed-0.5.3](aviation-routes/tpc-signed-0.5.3),
      [tpc-signed-0.5.2](aviation-routes/tpc-signed-0.5.2),
      [tpc-signed-0.5.1](aviation-routes/tpc-signed-0.5.1),
